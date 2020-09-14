@@ -1,6 +1,9 @@
 export default {
 	mode: "spa",
 	target: "static",
+	router: {
+    base: '/frontendmentor/'
+  },
 	components: true,
 	buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
 	head: {
