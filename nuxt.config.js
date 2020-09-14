@@ -1,11 +1,18 @@
 export default {
-	mode: "universal",
+	mode: "spa",
 	target: "static",
 	router: {
     base: '/frontendmentor/'
   },
 	components: true,
-	buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
+	buildModules: ["@nuxtjs/color-mode", "@nuxtjs/tailwindcss"],
+	tailwindcss: {
+    // add '~tailwind.config` alias
+    exposeConfig: true
+  },
+  purgeCSS: {
+    whitelist: ["dark-mode"]
+  },
 	head: {
 		title: "Nuxtjs Tailwindcss",
 		meta: [
