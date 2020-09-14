@@ -1,0 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.animate-mode {
+  transition: color .8s cubic-bezier(.2,.8,.2,1),background-color .8s cubic-bezier(.2,.8,.2,1),fill .8s cubic-bezier(.2,.8,.2,1);
+}
